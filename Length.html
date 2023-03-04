@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando length</title>
+</head>
+<body>
+    <p id="res"></p>
+    <script>
+        let x = prompt("Digite um texto")
+        let resultado = x.length
+        if (resultado<=20){
+            y = document.getElementById("res").innerHTML = " O texto é pequeno"
+        }else if (resultado>20 && resultado<=30){
+            y = document.getElementById("res").innerHTML =  " O texto é medio"
+        }else if(resultado>30 && resultado<=40){
+            y = document.getElementById("res").innerHTML = " O texto é grande"
+        }else{
+            y = document.getElementById("res").innerHTML =  "Não vou contar o tamanho da frase"
+        }
+    </script>
+</body>
+</html>
