@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            
+        }
+
+        button{
+            background-color: white;
+            font-family: cursive;
+            border: 5px solid purple;
+            margin-left: 870px;
+            margin-top: 10px;
+            border-radius: 3px;
+            padding: 10px;
+        }
+
+        button:hover{
+            background: linear-gradient(72deg,blue,purple);
+            transition: 0.2s;
+            color:white;
+        }
+        p{
+            color: black;
+            margin-left: 860px;
+            font-family:Arial;
+           
+
+        }
+
+        input{
+           margin-top: 50px;
+           margin-left: 805px;
+           width: 300px;
+           background-color: white;
+           border-radius: 5px;
+           padding:10px;
+
+           
+        }
+
+        div p {
+            background: linear-gradient(72deg, blue, purple);
+            
+            width: 200px;
+            height: 200px;
+            border: 3px solid black;
+            border-radius: 10px;
+            margin-top: 20px;
+            
+           
+        }
+        label{
+            
+            font-size: 30px;
+            font-family: Impact;
+            margin-left: 650px;
+            
+            
+            
+        }
+
+        #final{
+          
+            margin-top: 10px;
+            margin-left: 880px;
+            font-family: 'Courier New';
+
+        }
+        img{
+            width: 80px;
+            margin-left: 930px;
+            margin-top: 20px;
+            border-radius: 15px;
+            border: 3px solid black
+        }
+       
+
+       
+
+        
+        
+
+        
+    </style>
+</head>
+<body>
+
+   <label>Atividade Tabuada de Multiplicação Infinity School</label><br>
+   
+    <input id="num" type="text" placeholder="digite um numero:"><br>
+    <button onclick="tabuada()">Tabuada de Multiplicação</button>
+        <div>
+          <p id="res"></p>
+        </div>
+
+            <img src="download.png">
+            <p id="final"><strong>Atividade feita por:</p>
+            <P id="final"><strong>Nathalia de Macedo Martins</P>
+            <p id="final"><strong>Programadora Full Stack</p>
+            <p id="final"><strong>Monitora Infinity School</p>
+
+         
+      
+    <script>
+       
+      
+            function tabuada(){
+                let tabu = 0
+                let x = document.getElementById("num").value
+                for(i = 0; i <= 10;i++){
+                    tabu += `${x} x ${i} = ${x*i}<br>`
+                  
+                }
+                y = document.getElementById("res").innerHTML = tabu
+            }
+    </script>
+
+</body>
+</html>
